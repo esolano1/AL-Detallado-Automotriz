@@ -25,3 +25,14 @@ body {
 border-color: #f20d0d !important;
 box-shadow: 0 0 0 1px #f20d0d !important;
 }
+
+.monochrome-img {
+  filter: grayscale(100%) contrast(110%);
+}
+.monochrome-img:hover {
+  filter: grayscale(0%) contrast(100%);
+  transition: all 0.5s ease;
+}
+.timeline-line {
+  background: linear-gradient(180deg, #f20d0d 0%, #341818 100%);
+}
