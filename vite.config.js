@@ -5,6 +5,9 @@ import { resolve } from "path";
 export default defineConfig({
   base: "/AL-Detallado-Automotriz/",
   plugins: [tailwindcss()],
+  server: {
+    host: true,
+  },
   build: {
     rollupOptions: {
       input: {
