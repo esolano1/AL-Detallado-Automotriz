@@ -201,6 +201,8 @@
         <option>Detallado Completo de Interiores</option>
         <option>Corrección de Pintura</option>
         <option>Limpieza de Motor</option>
+        <option>Mantenimiento Preventivo</option>
+        <option>Otros</option>
       </select>
     </div>
 
@@ -208,7 +210,7 @@
 
   <div class="flex flex-col gap-2">
     <label class="text-sm font-medium text-zinc-400">Mensaje</label>
-    <textarea id="mensaje" class="bg-zinc-800 border-zinc-700 rounded-lg p-4 text-white focus:ring-primary focus:border-primary transition-all" placeholder="Cuéntanos sobre tu vehículo y lo que necesitas..." rows="4"></textarea>
+    <textarea id="mensaje" class="bg-zinc-800 border-zinc-700 rounded-lg p-4 text-white focus:ring-primary focus:border-primary transition-all" placeholder="Cuéntanos sobre tu vehículo y lo que necesitas. Nosotros nos comunicaremos contigo." rows="4"></textarea>
   </div>
 
   <button type="submit" class="w-full bg-[var(--primary)] hover:bg-red-700 text-white font-bold py-4 rounded-lg flex items-center justify-center gap-2 transition-all">
@@ -287,7 +289,7 @@
 </div>
 <div>
 <p class="text-xs text-zinc-500 uppercase font-bold">Email</p>
-<p class="text-white group-hover:text-[var(--primary)] transition-colors">info@aldetallado.com</p>
+<p class="text-white group-hover:text-[var(--primary)] transition-colors">alexworks5577@gmail.com</p>
 </div>
 </a>
 <a class="flex items-center gap-4 group" href="https://wa.me/4425673188">
@@ -319,24 +321,79 @@
 </div>
 </div>
 </main>
-<footer class="mt-20 border-t border-white/5 bg-zinc-950 px-6 py-12">
-<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-<div class="flex items-center gap-16">
-<div class="size-6 text-[var(--primary)]">
-<div class="size-10 md:size-20 shrink-0">
-    <img
-      src="images/logo.jpeg"
-      alt="Logo A-L Detallado Automotriz"
-      class="w-full h-full object-contain"
-    />
-  </div>
+
+<!-- Footer -->
+<footer class="bg-[var(--background-dark)] border-t border-[var(--border-dark)] py-12">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-3">
+<div class="size-10">
+  <img
+    src="images/logo.jpeg"
+    alt="Logo A-L Detallado Automotriz"
+    class="w-full h-full object-contain"
+  />
 </div>
-<h2 class="text-white font-bold tracking-tight">A-L DETALLADO AUTOMOTRIZ</h2>
+<span class="text-lg font-bold tracking-tight uppercase italic">A-L <span class="text-[var(--primary)]">Detallado Automotriz</span></span>
 </div>
-<p class="text-zinc-500 text-sm">© 2026 A-L Detallado Automotriz. Todos los derechos reservados.</p>
-<div class="flex gap-6 text-sm font-medium text-zinc-400">
-<a class="hover:text-[var(--primary)] transition-colors" href="#">Aviso de Privacidad</a>
-<a class="hover:text-[var(--primary)] transition-colors" href="#">Términos y Condiciones</a>
+<p class="text-slate-500 text-sm">Elevando tu auto al siguiente nivel.</p>
+</div>
+<div class="flex gap-8">
+  <!-- Facebook -->
+  <a
+    href="https://www.facebook.com/people/A-L-Detallado-Automotriz/100063913400044/?mibextid=wwXIfr&rdid=u4wpDlPrcXEZxZYx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16rf5xLuQ1%2F%3Fmibextid%3DwwXIfr"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-slate-400 hover:text-[var(--primary)] transition-colors"
+    aria-label="Facebook"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M7 10v4h3v7h4v-7h3l1-4h-4v-2a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a
+    href="https://www.instagram.com/alexworks24?igsh=MXcyeWxyMHVlamZqZg%3D%3D&utm_source=qr"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-slate-400 hover:text-[var(--primary)] transition-colors"
+    aria-label="Instagram"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4z"/>
+      <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"/>
+      <path d="M16.5 7.5v.01"/>
+    </svg>
+  </a>
+
+  <!-- Youtube -->
+  <a
+    href="https://youtube.com/@alexworks4540?si=7J5NvjuiFJexfMSO"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-slate-400 hover:text-[var(--primary)] transition-colors"
+    aria-label="TikTok"
+  >
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+   viewBox="0 0 24 24" fill="currentColor"
+   class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+   <path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
+  </a>
+</div>
+
+<div class="text-center md:text-right">
+<p class="text-slate-500 text-xs">© 2026 A-L Detallado Automotriz. Todos los derechos reservados.</p>
+<a class="text-slate-400 hover:text-[var(--primary)] transition-colors" href="terms.html">Términos y Condiciones</a>
+</div>
 </div>
 </div>
 </footer>
