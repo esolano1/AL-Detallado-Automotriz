@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A-L Detallado - Before &amp; After Gallery</title>
+
+<link rel="icon" href="/favicon.ico" />
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+
+</head>
+<body class="bg-[var(--background-dark)] text-slate-300 min-h-screen overflow-x-hidden transition-colors duration-300">
+<!-- Navigation -->
+
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-white/5 dark:border-[var(--border-dark)]">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex items-center gap-4 h-20">
+
+<button
+  id="mobileMenuBtn"
+  class="md:hidden text-white focus:outline-none cursor-pointer"
+  aria-label="Abrir menú"
+>
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+
+<div
+  id="mobileMenu"
+  class="hidden fixed top-20 inset-x-0 bg-[var(--background-dark)] border-t border-white/10 z-40 md:hidden"
+>
+  <div class="flex flex-col gap-6 px-6 py-8">
+    <a href="services.html" class="text-lg font-medium text-white hover:text-[var(--primary)]">Servicios</a>
+    <a href="#gallery" class="text-lg font-medium text-white hover:text-[var(--primary)]">Galería</a>
+    <a href="contact.html" class="text-lg font-medium text-white hover:text-[var(--primary)]">Contacto</a>
+    <a href="about-us.html" class="text-lg font-medium text-white hover:text-[var(--primary)]">Nosotros</a>
+
+ 
+<div class="hidden md:block">
+  <a href="contact.html#contactsection"
+     class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-red-700 text-white px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all transform hover:scale-105">
+    Agenda Ahora
+  </a>
+</div>
+
+  </div>
+</div>
+
+<a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
+<div class="size-10 md:size-20 shrink-0">
+    <img
+      src="images/logo.jpeg"
+      alt="Logo A-L Detallado Automotriz"
+      class="w-full h-full object-contain"
+    />
+  </div>
+  <span class="text-xl font-bold tracking-tight uppercase italic text-white">
+    A-L <span class="text-[var(--primary)]">Detallado Automotriz</span>
+  </span>
+</a>
+
+<div class="flex-1 md:hidden">
+  <label class="sr-only" for="siteSearchMobile">Buscar</label>
+  <div class="relative">
+    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+      search
+    </span>
+
+    <input
+      id="siteSearchMobile"
+      type="search"
+      placeholder="Buscar…"
+      class="w-full rounded-lg bg-white/5 border border-white/10 pl-10 pr-3 py-2 text-sm text-white placeholder:text-slate-500 outline-none focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)]/30 transition"
+      autocomplete="off"
+    />
+  </div>
+</div>
+
+<div class="hidden md:block w-[360px]">
+  <label class="sr-only" for="siteSearch">Buscar</label>
+  <div class="relative">
+    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+      search
+    </span>
+
+    <input
+      id="siteSearch"
+      type="search"
+      placeholder="Buscar servicio…"
+      class="w-full rounded-lg bg-white/5 border border-white/10 pl-10 pr-9 py-2.5 text-sm text-white placeholder:text-slate-500 outline-none focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)]/30 transition"
+      autocomplete="off"
+    />
+
+    <button
+      id="clearSearch"
+      type="button"
+      class="hidden absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white transition"
+      aria-label="Limpiar búsqueda"
+    >
+      <span class="material-symbols-outlined text-[20px]">close</span>
+    </button>
+  </div>
+
+  <p id="searchMeta" class="mt-1 text-xs text-slate-500"></p>
+</div>
+
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium text-white hover:text-[var(--primary)] transition-colors" href="services.html">Servicios</a>
+<a class="text-sm font-medium text-white hover:text-[var(--primary)] transition-colors" href="#services">Galería</a>
+<a class="text-sm font-medium text-white hover:text-[var(--primary)] transition-colors" href="contact.html">Contacto</a>
+<a class="text-sm font-medium text-white hover:text-[var(--primary)] transition-colors" href="about-us.html">Nosotros</a>
+</div>
+
+<div class="hidden md:block">
+  <a href="contact.html#contactsection"
+     class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-red-700 text-white px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all transform hover:scale-105">
+    Agenda Ahora
+  </a>
+</div>
+
+</div>
+</div>
+</header>
+
+<main class="max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-16">
+  <section class="mb-12">
+    <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-10">
+      <div class="max-w-2xl">
+        <span class="inline-block text-[var(--primary)] font-bold tracking-[0.3em] uppercase mb-4 text-sm">Galería</span>
+        <h1 class="text-5xl lg:text-7xl font-bold leading-none tracking-tight mb-4 text-white">
+          El Arte de la <span class="text-[var(--primary)] italic">Restauración</span>
+        </h1>
+        <p class="text-slate-400 text-lg max-w-lg leading-relaxed">
+          Mira la transformación real de distintas superficies automotrices. Desde defectos severos en pintura hasta acabados profundos, limpios y brillantes.
+        </p>
+      </div>
+
+      <div class="flex gap-2">
+        <button class="bg-[var(--card-dark)] border border-[var(--border-dark)] p-3 rounded-lg hover:bg-[var(--primary)] hover:text-white transition-colors text-slate-300">
+          <span class="material-symbols-outlined">grid_view</span>
+        </button>
+        <button class="bg-[var(--card-dark)] border border-[var(--border-dark)] p-3 rounded-lg hover:bg-[var(--primary)] hover:text-white transition-colors text-slate-300">
+          <span class="material-symbols-outlined">view_carousel</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="flex gap-3 pb-2 overflow-x-auto no-scrollbar">
+      <div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[var(--primary)] px-6 cursor-pointer">
+        <p class="text-white text-sm font-bold uppercase tracking-wider">Todos</p>
+      </div>
+      <div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[var(--card-dark)] border border-[var(--border-dark)] px-6 cursor-pointer hover:bg-white/5 transition-colors">
+        <p class="text-white text-sm font-medium">Pulido de Carrocería</p>
+      </div>
+      <div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[var(--card-dark)] border border-[var(--border-dark)] px-6 cursor-pointer hover:bg-white/5 transition-colors">
+        <p class="text-white text-sm font-medium">Cerámico</p>
+      </div>
+      <div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[var(--card-dark)] border border-[var(--border-dark)] px-6 cursor-pointer hover:bg-white/5 transition-colors">
+        <p class="text-white text-sm font-medium">Interiores</p>
+      </div>
+      <div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[var(--card-dark)] border border-[var(--border-dark)] px-6 cursor-pointer hover:bg-white/5 transition-colors">
+        <p class="text-white text-sm font-medium">Motor</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-16">
+    <div class="group relative overflow-hidden rounded-3xl bg-[var(--card-dark)] border border-[var(--border-dark)] shadow-2xl">
+      <div class="grid grid-cols-1 lg:grid-cols-12">
+        <div class="lg:col-span-8 relative aspect-video lg:aspect-auto overflow-hidden bg-black min-h-[420px] lg:min-h-[520px]">
+          <div
+            class="absolute inset-0 bg-cover bg-center"
+            style="background-image: url('images/gallery/nissan-xtrail.jpg');"
+          >
+
+          <!-- line with folding. For more experience, add a draggable handle to reveal more of the before/after images. -->
+           <!-- <div class="absolute inset-y-0 left-1/2 w-1 bg-[var(--primary)] z-10">
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-[var(--primary)] rounded-full flex items-center justify-center shadow-xl text-white cursor-ew-resize">
+                <span class="material-symbols-outlined">unfold_more</span>
+              </div>
+            </div> -->
+
+        <!--   <div class="absolute top-6 left-6 bg-black/60 backdrop-blur-sm border border-white/20 px-4 py-1 rounded text-[10px] font-black tracking-widest text-white uppercase">
+              Antes
+            </div> --> 
+          <!--  <div class="absolute top-6 right-6 bg-[var(--primary)] px-4 py-1 rounded text-[10px] font-black tracking-widest text-white uppercase">
+              Después
+            </div> -->
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 p-8 flex flex-col justify-between">
+          <div>
+            <span class="text-[var(--primary)] text-xs font-bold uppercase tracking-widest mb-2 block">Proyecto 01</span>
+
+            <h2 class="text-3xl font-bold mb-4 uppercase leading-tight text-white">
+              Nissan Xtrail
+              <br />
+              <span class="text-sm text-slate-400">Trabajo completo:</span>
+              <ul>
+                <li class="text-sm font-medium normal-case text-slate-400">Lavado de tapicería</li>
+                <li class="text-sm font-medium normal-case text-slate-400">Lavado de cielo</li>
+                <li class="text-sm font-medium normal-case text-slate-400">Lavado de alfombra y tapetes</li>
+                <li class="text-sm font-medium normal-case text-slate-400">Limpieza de consola central</li>
+                <li class="text-sm font-medium normal-case text-slate-400">Limpieza de puertas y cristales</li>
+                <li class="text-sm font-medium normal-case text-slate-400">Limpieza de salpicadero y pilares</li>
+                <li class="text-sm font-medium normal-case text-slate-400">Limpieza de marcos de puerta</li>
+                <li class="text-sm font-medium normal-case text-slate-400">Limpieza de consola de luces</li>
+                <li class="text-sm font-medium normal-case text-slate-400">Limpieza de general de motor</li>
+              </ul>
+            </h2>
+
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center gap-4">
+                <div class="size-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[var(--primary)]">schedule</span>
+                </div>
+                <div>
+                  <p class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Tiempo total</p>
+                  <p class="text-sm font-semibold text-white">3 días</p>
+                </div>
+              </div>
+
+            <!--  <div class="flex items-center gap-4">
+                <div class="size-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[var(--primary)]">verified_user</span>
+                </div>
+                <div>
+                  <p class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Protección</p>
+                  <p class="text-sm font-semibold text-white">Cerámico 9H + PPF</p>
+                </div>  -->
+              </div>
+            </div>
+
+            <p class="text-sm text-slate-400 leading-relaxed italic">
+              “El vehículo llegó con marcas severas por lavados incorrectos. Después de una corrección meticulosa de 3 etapas, recuperamos profundidad, reflejo y claridad en la pintura.”
+            </p>
+          </div>
+
+          <button class="mt-8 w-full border border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition-all py-3 rounded-lg font-bold text-sm uppercase tracking-widest">
+            Ver todas las imágenes
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 flex items-center justify-center gap-8">
+      <div class="flex items-center gap-2">
+        <div class="size-2 rounded-full bg-slate-500"></div>
+      <!--  <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Arrastra el comparador</span>-->
+      </div>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <article class="group relative bg-[var(--card-dark)] rounded-2xl overflow-hidden border border-[var(--border-dark)]">
+      <div class="aspect-square relative overflow-hidden">
+        <img
+          class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+          src="images/gallery/renault-oroch.jpg"
+          alt="Renault Oroch Exterior"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+          <p class="text-[var(--primary)] text-xs font-bold uppercase mb-1">Interior y Exterior</p>
+          <h3 class="text-xl font-bold text-white">Renault Oroch Exterior</h3>
+        </div>
+  <!-- <div class="absolute top-4 right-4 bg-[var(--primary)] px-3 py-1 rounded text-[10px] font-bold text-white uppercase tracking-widest">Mirror Finish</div> -->
+      </div>
+
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-xs font-medium text-slate-500 uppercase">Lavado convencional</span>
+        <!--  <span class="text-xs font-bold bg-green-500/10 text-green-500 px-2 py-0.5 rounded uppercase">Nuevo</span>  -->
+        </div>
+        <p class="text-sm text-slate-400 line-clamp-2">
+        Limpieza profunda con vapor y tratamiento especializado para conservar la textura y apariencia premium del interior.
+        </p>
+      </div>
+    </article>
+
+
+    <article class="group relative bg-[var(--card-dark)] rounded-2xl overflow-hidden border border-[var(--border-dark)]">
+      <div class="aspect-square relative overflow-hidden">
+        <img
+          class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+          src="images/gallery/jetta.jpg"
+          alt="Jetta Exterior"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+          <p class="text-[var(--primary)] text-xs font-bold uppercase mb-1">Interior y Exterior</p>
+          <h3 class="text-xl font-bold text-white">Jetta Exterior</h3>
+        </div>
+       <!-- <div class="absolute top-4 right-4 bg-[var(--primary)] px-3 py-1 rounded text-[10px] font-bold text-white uppercase tracking-widest">9.5/10</div> -->
+      </div>
+
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-xs font-medium text-slate-500 uppercase">Lavado y Encerado</span>
+  <!--       <div class="flex text-[var(--primary)]">
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+          </div> --> 
+        </div>
+        <p class="text-sm text-slate-400 line-clamp-2">
+          Lavado y encerado con tratamiento especializado para conservar la textura y apariencia premium del interior.
+        </p>
+      </div>
+    </article>
+
+
+    <article class="group relative bg-[var(--card-dark)] rounded-2xl overflow-hidden border border-[var(--border-dark)]">
+      <div class="aspect-square relative overflow-hidden">
+        <img
+          class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+          src="images/gallery/motor.jpeg"
+          alt="Motor detallado"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+          <p class="text-[var(--primary)] text-xs font-bold uppercase mb-1">Motor</p>
+          <h3 class="text-xl font-bold text-white">Motor de Ford Mustang 5.0</h3>
+        </div>
+      <!--  <div class="absolute top-4 right-4 bg-[var(--primary)] px-3 py-1 rounded text-[10px] font-bold text-white uppercase tracking-widest">Top Detail</div> -->
+      </div>
+
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-xs font-medium text-slate-500 uppercase">Limpieza de motor</span>
+       <!--   <div class="flex text-[var(--primary)]">
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+          </div>  -->
+        </div>
+        <p class="text-sm text-slate-400 line-clamp-2">
+          Limpieza detallada del motor para una presentación limpia, ordenada y visualmente impecable.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section class="mt-24">
+    <div class="relative rounded-3xl overflow-hidden p-12 lg:p-20 text-center bg-[var(--card-dark)] border border-[var(--border-dark)]">
+      <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at center, #f20d0d 0%, transparent 70%);"></div>
+
+      <h2 class="relative text-4xl lg:text-6xl font-bold leading-tight mb-6 text-white">
+        ¿Listo para ver el <br />
+        <span class="text-[var(--primary)] italic">potencial real</span> de tu auto?
+      </h2>
+
+      <p class="relative text-slate-400 text-lg max-w-2xl mx-auto mb-10">
+        Lleva tu vehículo al siguiente nivel con procesos de detallado pensados para restaurar, proteger y resaltar cada superficie.
+      </p>
+
+      <div class="relative flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html#contactsection" class="bg-[var(--primary)] hover:bg-red-700 text-white px-12 py-4 rounded-lg font-bold text-lg uppercase transition-all shadow-xl hover:scale-105">
+          Cotiza ahora
+        </a>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[var(--background-dark)] border-t border-[var(--border-dark)] py-12">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-3">
+<div class="size-10">
+  <img
+    src="images/logo.jpeg"
+    alt="Logo A-L Detallado Automotriz"
+    class="w-full h-full object-contain"
+  />
+</div>
+<span class="text-lg font-bold tracking-tight uppercase italic">A-L <span class="text-[var(--primary)]">Detallado Automotriz</span></span>
+</div>
+<p class="text-slate-500 text-sm">Elevando tu auto al siguiente nivel.</p>
+</div>
+<div class="flex gap-8">
+  <!-- Facebook -->
+  <a
+    href="https://www.facebook.com/people/A-L-Detallado-Automotriz/100063913400044/?mibextid=wwXIfr&rdid=u4wpDlPrcXEZxZYx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16rf5xLuQ1%2F%3Fmibextid%3DwwXIfr"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-slate-400 hover:text-[var(--primary)] transition-colors"
+    aria-label="Facebook"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M7 10v4h3v7h4v-7h3l1-4h-4v-2a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a
+    href="https://www.instagram.com/alexworks24?igsh=MXcyeWxyMHVlamZqZg%3D%3D&utm_source=qr"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-slate-400 hover:text-[var(--primary)] transition-colors"
+    aria-label="Instagram"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4z"/>
+      <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"/>
+      <path d="M16.5 7.5v.01"/>
+    </svg>
+  </a>
+
+  <!-- Youtube -->
+  <a
+    href="https://youtube.com/@alexworks4540?si=7J5NvjuiFJexfMSO"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-slate-400 hover:text-[var(--primary)] transition-colors"
+    aria-label="TikTok"
+  >
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+   viewBox="0 0 24 24" fill="currentColor"
+   class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+   <path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
+  </a>
+</div>
+
+<div class="text-center md:text-right">
+<p class="text-slate-500 text-xs">© 2026 A-L Detallado Automotriz. Todos los derechos reservados.</p>
+<a class="text-slate-400 hover:text-[var(--primary)] transition-colors" href="terms.html">Términos y Condiciones</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body>
+
+<script type="module" src="src/main.js"></script>
+
+</html>

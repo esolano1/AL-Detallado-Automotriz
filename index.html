@@ -14,6 +14,7 @@
 
 
 </head>
+
 <body class="bg-[var(--background-dark)] text-slate-900 dark:text-white transition-colors duration-300">
 <!-- Navigation -->
 
@@ -49,9 +50,11 @@
     <a href="contact.html" class="text-lg font-medium hover:text-[var(--primary)]">Contacto</a>
     <a href="about-us.html" class="text-lg font-medium hover:text-[var(--primary)]">Nosotros</a>
 
-    <button class="mt-4 bg-[var(--primary)] text-white py-3 rounded-lg font-bold uppercase">
-      Agenda Ahora
-    </button>
+   <a href="contact.html#contactsection"
+     class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-red-700 text-white px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all transform hover:scale-105">
+    Agenda Ahora
+  </a>
+
   </div>
 </div>
 
@@ -124,15 +127,16 @@
 
 <div class="hidden md:flex items-center gap-10">
 <a class="text-sm font-medium hover:text-[var(--primary)] transition-colors" href="services.html">Servicios</a>
-<a class="text-sm font-medium hover:text-[var(--primary)] transition-colors" href="#services">Galería</a>
+<a class="text-sm font-medium hover:text-[var(--primary)] transition-colors" href="gallery.html">Galería</a>
 <a class="text-sm font-medium hover:text-[var(--primary)] transition-colors" href="contact.html">Contacto</a>
 <a class="text-sm font-medium hover:text-[var(--primary)] transition-colors" href="about-us.html">Nosotros</a>
 </div>
 
 <div class="hidden md:block">
-  <button class="bg-[var(--primary)] hover:bg-red-700 text-white px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all transform hover:scale-105">
+  <a href="contact.html#contactsection"
+     class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-red-700 text-white px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all transform hover:scale-105">
     Agenda Ahora
-  </button>
+  </a>
 </div>
 
 
@@ -157,13 +161,15 @@
                     Servicios de detallado de alta gama, hechos a la medida para propietarios exigentes que no aceptan nada menos que la excelencia absoluta.
                 </p>
 <div class="flex gap-4">
-<button class="bg-[var(--primary)] hover:bg-red-700 text-white px-8 py-4 rounded-lg text-base font-bold uppercase tracking-widest transition-all">
-                        Ver Servicios
-                        <a href="services.html" class="absolute inset-0"></a>
-                    </button>
-<button class="border border-white/20 hover:border-primary px-8 py-4 rounded-lg text-base font-bold uppercase tracking-widest transition-all">
-                        Nuestra Galería
-                    </button>
+  <a href="services.html"
+     class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-red-700 text-white px-8 py-4 rounded-lg text-base font-bold uppercase tracking-widest transition-all">
+    Ver Servicios
+  </a>
+
+  <a href="gallery.html"
+     class="inline-flex items-center justify-center border border-white/20 hover:border-[var(--primary)] px-8 py-4 rounded-lg text-base font-bold uppercase tracking-widest transition-all">
+    Nuestra Galería
+  </a>
 </div>
 </div>
 </div>
