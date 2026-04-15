@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
-  <script type="module" crossorigin src="/AL-Detallado-Automotriz/assets/main-CDzwakqk.js"></script>
-  <link rel="stylesheet" crossorigin href="/AL-Detallado-Automotriz/assets/main-BtAHr10Z.css">
+  <script type="module" crossorigin src="/AL-Detallado-Automotriz/assets/main-C_8QUzIc.js"></script>
+  <link rel="stylesheet" crossorigin href="/AL-Detallado-Automotriz/assets/main-BTO9hyTJ.css">
 </head>
 <body class="bg-[var(--background-dark)] text-slate-300 transition-colors duration-300">
  
@@ -55,9 +55,28 @@
       class="w-full h-full object-contain"
     />
   </div>
-  <span class="text-xl font-bold tracking-tight uppercase italic text-white">
+
+
+ <!-- Texto del logo a lado del buscador
+   <span class="text-xl font-bold tracking-tight uppercase italic">
     A-L <span class="text-[var(--primary)]">Detallado Automotriz</span>
-  </span>
+  </span>  -->
+
+  <!-- Texto del logo no visible en móvil
+<span class="hidden md:inline text-xl font-bold tracking-tight uppercase italic">
+  A-L <span class="text-[var(--primary)]">Detallado Automotriz</span>
+</span> -->
+
+<!-- Texto del logo cortito visible en móvil  -->
+<span class="md:hidden text-base font-bold tracking-tight uppercase italic">
+  A-L <span class="text-[var(--primary)]">Detallado</span>
+</span>
+
+<!-- Texto del logo completo visible en PC  -->
+<span class="hidden md:inline text-xl font-bold tracking-tight uppercase italic">
+  A-L <span class="text-[var(--primary)]">Detallado Automotriz</span>
+</span>
+
 </a>
 
 <div class="flex-1 md:hidden">
@@ -135,12 +154,17 @@
 <div class="flex flex-wrap justify-between items-end gap-4 py-8 border-b border-white/10">
 <div class="flex min-w-72 flex-col gap-3">
 <h1 class="text-white text-5xl font-black leading-tight tracking-[-0.033em]">Términos y Condiciones</h1>
-<p class="text-slate-500 text-base font-normal leading-normal">Última actualización: 08 de abril de 2026</p>
+<p class="text-slate-500 text-base font-normal leading-normal">Última actualización: 15 de abril de 2026</p>
 </div>
-<button class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white text-sm font-bold hover:bg-white/10 transition-colors">
-<span class="material-symbols-outlined text-[20px]">download</span>
-<span>Descargar PDF</span>
-</button>
+
+<a
+  href="./docs/terminos-y-condiciones.pdf"
+  download="Terminos-y-Condiciones-A-L-Detallado.pdf"
+  class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white text-sm font-bold hover:bg-white/10 transition-colors"
+>
+  <span class="material-symbols-outlined text-[20px]">download</span>
+  <span>Descargar PDF</span>
+</a>
 </div>
 
 <div class="flex flex-col lg:flex-row gap-12 mt-10">
