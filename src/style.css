@@ -2,8 +2,9 @@
 
 
 :root {
+  color-scheme: dark;
   --primary: #f20d0d;
-  --background-light: #f8f5f5;
+  --background-light: #0a0a0a;
   --background-dark: #0a0a0a;
   --card-dark: #1a1a1a;
   --border-dark: #333333;
