@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nosotros | A-L Detallado Automotriz</title>
+
+<link rel="icon" href="/favicon.ico" />
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+</head>
+<body class="bg-[var(--background-dark)] text-slate-300 antialiased overflow-x-hidden">
+
+
+        <header class="fixed top-0 w-full z-50 glass-nav border-b border-[var(--border-dark)]">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+  
+<!--<div class="flex items-center justify-between h-20"> -->
+
+<!-- <div class="flex items-center gap-6 h-20"> -->
+<div class="flex items-center gap-4 h-20">
+
+
+  <!-- Mobile menu button -->
+<button
+  id="mobileMenuBtn"
+  class="md:hidden text-white focus:outline-none cursor-pointer"
+  aria-label="Abrir menú"
+>
+  <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+
+
+<!-- Mobile Menu -->
+<div
+  id="mobileMenu"
+  class="hidden fixed top-20 inset-x-0 bg-[var(--background-dark)] border-t border-white/10 z-40 md:hidden"
+>
+  <div class="flex flex-col gap-6 px-6 py-8">
+    <a href="services.html" class="text-lg font-medium text-white hover:text-[var(--primary)]">Servicios</a>
+    <a href="gallery.html" class="text-lg font-medium text-white hover:text-[var(--primary)]">Galería</a>
+    <a href="contact.html" class="text-lg font-medium text-white hover:text-[var(--primary)]">Contacto</a>
+    <a href="about-us.html" class="text-lg font-medium text-white hover:text-[var(--primary)]">Nosotros</a>
+
+  <a href="contact.html#contactsection"
+     class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-red-700 text-white px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all transform hover:scale-105">
+    Agenda Ahora
+  </a>
+
+  </div>
+</div>
+
+
+<!-- <a href="#top" class="flex items-center gap-3 hover:opacity-90 transition"> -->
+
+<a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
+
+<div class="size-10 md:size-20 shrink-0">
+
+    <img
+      src="images/logo.jpeg"
+      alt="Logo A-L Detallado Automotriz"
+      class="w-full h-full object-contain"
+    />
+  </div>
+
+
+ <!-- Texto del logo a lado del buscador
+   <span class="text-xl font-bold tracking-tight uppercase italic">
+    A-L <span class="text-[var(--primary)]">Detallado Automotriz</span>
+  </span>  -->
+
+  <!-- Texto del logo no visible en móvil
+<span class="hidden md:inline text-xl font-bold tracking-tight uppercase italic">
+  A-L <span class="text-[var(--primary)]">Detallado Automotriz</span>
+</span> -->
+
+<!-- Texto del logo cortito visible en móvil  -->
+<span class="md:hidden text-base font-bold tracking-tight uppercase italic text-white">
+  A-L <span class="text-[var(--primary)]">Detallado</span>
+</span>
+
+<!-- Texto del logo completo visible en PC  -->
+<span class="hidden md:inline text-xl font-bold tracking-tight uppercase italic text-white">
+  A-L <span class="text-[var(--primary)]">Detallado Automotriz</span>
+</span>
+
+</a>
+
+<!-- Search (mobile) -->
+<div class="flex-1 md:hidden">
+  <label class="sr-only" for="siteSearchMobile">Buscar</label>
+  <div class="relative">
+    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+      search
+    </span>
+
+    <input
+      id="siteSearchMobile"
+      type="search"
+      placeholder="Buscar…"
+      class="w-full rounded-lg bg-white/5 border border-white/10 pl-10 pr-3 py-2 text-sm text-white placeholder:text-slate-500 outline-none focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)]/30 transition"
+      autocomplete="off"
+    />
+  </div>
+</div>
+
+
+<!-- Search (PC) -->
+<div class="hidden md:block w-[360px]">
+  <label class="sr-only" for="siteSearch">Buscar</label>
+  <div class="relative">
+    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+      search
+    </span>
+
+    <input
+      id="siteSearch"
+      type="search"
+      placeholder="Buscar servicio…"
+      class="w-full rounded-lg bg-white/5 border border-white/10 pl-10 pr-9 py-2.5 text-sm text-white placeholder:text-slate-500 outline-none focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--primary)]/30 transition"
+      autocomplete="off"
+    />
+
+    <button
+      id="clearSearch"
+      type="button"
+      class="hidden absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white transition"
+      aria-label="Limpiar búsqueda"
+    >
+      <span class="material-symbols-outlined text-[20px]">close</span>
+    </button>
+  </div>
+
+  <p id="searchMeta" class="mt-1 text-xs text-slate-500"></p>
+</div>
+
+
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium text-white hover:text-[var(--primary)] transition-colors" href="services.html">Servicios</a>
+<a class="text-sm font-medium text-white hover:text-[var(--primary)] transition-colors" href="gallery.html">Galería</a>
+<a class="text-sm font-medium text-white hover:text-[var(--primary)] transition-colors" href="contact.html">Contacto</a>
+<a class="text-sm font-medium text-white hover:text-[var(--primary)] transition-colors" href="about-us.html">Nosotros</a>
+</div>
+
+<div class="hidden md:block">
+
+  <a href="contact.html#contactsection"
+     class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-red-700 text-white px-6 py-2.5 rounded-lg text-sm font-bold uppercase tracking-wider transition-all transform hover:scale-105">
+    Agenda Ahora
+  </a>
+
+</div>
+
+
+
+</div>
+</div>
+</header>
+
+
+<section class="relative min-h-[90vh] flex flex-col md:flex-row items-stretch border-b border-zinc-800">
+<div class="w-full md:w-1/2 relative min-h-[400px] md:min-h-0 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center monochrome-img" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-P9DqsYGrdszYc6teKI1AILQvuwDUe_m6dkqGMxGICYJ5IutTKwyoeN0u952Q97W2nq-JCRyYD8zzAVi5w0iRCP5P5n-tpOcxI1MQlIkLqphWOhbfz5KtFOVcRp7kCViZq3wdnvWpE6MnTGcDTXVTWiQ8SMndbqG7bWwXGjLUDk-3aLJKt_LCm-PGwJzjlQzuSp63xbb-0PtrNe88-yHAOyICgb7fEGZ01_UBG4OhaJAdQS4EawuQtsuZU5fU68FMDj6z6NWfsApb');">
+</div>
+<div class="absolute inset-0 bg-[var(--primary)]/10 mix-blend-overlay"></div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-center p-10 lg:p-20 bg-[var(--background-dark)]">
+<span class="text-[var(--primary)] font-bold tracking-widest uppercase mb-4 text-sm tracking-[0.3em]">Nuestro Origen</span>
+<h1 class="text-white text-5xl lg:text-7xl font-bold leading-none tracking-tighter mb-8 uppercase">
+            La Obsesión <br/> se une a la <br/> <span class="text-[var(--primary)]">Precisión.</span>
+</h1>
+<p class="text-zinc-400 text-lg leading-relaxed max-w-lg mb-10">
+            Fundada en 2018, A-L Detallado comenzó en un pequeño garaje particular con una única misión: redefinir la restauración automotriz mediante una precisión quirúrgica. Lo que inició como una obsesión personal por la perfección de la pintura ha evolucionado hasta convertirse en el estudio de detallado más exclusivo de la región.
+        </p>
+<div class="flex items-center gap-6">
+<div class="h-[1px] w-12 bg-[var(--primary)]"></div>
+<p class="text-white font-medium italic">Alejandro Lopez, Fundador</p>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 lg:px-10 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-white text-3xl font-bold uppercase tracking-tight mb-4">El ADN de la Excelencia</h2>
+<p class="text-zinc-500">No solo limpiamos vehículos. Preservamos el patrimonio automotriz a través de un conjunto de estándares inflexibles que definen cada movimiento de nuestras herramientas.</p>
+</div>
+<div class="text-[var(--primary)] text-6xl font-black opacity-20 hidden lg:block">01. VALORES</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group p-8 border border-zinc-800 bg-[var(--card-dark)]/30 rounded-lg hover:border-[var(--primary)]/50 transition-all duration-500">
+<div class="text-[var(--primary)] mb-6">
+<span class="material-symbols-outlined text-4xl">target</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-4 uppercase tracking-wide">Precisión Quirúrgica</h3>
+<p class="text-zinc-400 leading-relaxed">Cada micro-pulgada de la pintura se trata con una exactitud calculada, utilizando herramientas premium y sistemas de iluminación de grado de laboratorio.</p>
+</div>
+<div class="group p-8 border border-zinc-800 bg-[var(--card-dark)]/30 rounded-lg hover:border-[var(--primary)]/50 transition-all duration-500">
+<div class="text-[var(--primary)] mb-6">
+<span class="material-symbols-outlined text-4xl">verified_user</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-4 uppercase tracking-wide">Exclusividad Absoluta</h3>
+<p class="text-zinc-400 leading-relaxed">Limitamos nuestra recepción mensual para asegurar que cada vehículo reciba nuestra atención indivisa. Nunca apresuramos la perfección.</p>
+</div>
+<div class="group p-8 border border-zinc-800 bg-[var(--card-dark)]/30 rounded-lg hover:border-[var(--primary)]/50 transition-all duration-500">
+<div class="text-[var(--primary)] mb-6">
+<span class="material-symbols-outlined text-4xl">diamond</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-4 uppercase tracking-wide">Integridad Pura</h3>
+<p class="text-zinc-400 leading-relaxed">Procesos transparentes y técnicos certificados en los que puede confiar para sus inversiones automotrices más valiosas.</p>
+</div>
+</div>
+</section>
+<section class="py-24 bg-zinc-950/50 border-y border-zinc-900 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="text-center mb-20">
+<h2 class="text-white text-4xl font-bold uppercase tracking-tighter">Nuestra Trayectoria</h2>
+<div class="h-1 w-20 bg-[var(--primary)] mx-auto mt-4"></div>
+</div>
+<div class="relative">
+<div class="absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] timeline-line opacity-20"></div>
+<div class="space-y-24">
+<div class="relative flex items-center justify-between group">
+<div class="w-full md:w-[45%] text-right pr-8 md:pr-16">
+<span class="text-[var(--primary)] font-bold text-2xl mb-2 block">2018</span>
+<h4 class="text-white text-xl font-bold mb-2 uppercase">El Primer Pulido</h4>
+<p class="text-zinc-500">Alejandro Lopez establece A-L Detallado como un servicio de detallado de pintura en un taller privado.</p>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 size-4 bg-[var(--primary)] rounded-full shadow-[0_0_15px_rgba(242,13,13,0.8)] z-10"></div>
+<div class="hidden md:block md:w-[45%]"></div>
+</div>
+<div class="relative flex items-center justify-between group">
+<div class="hidden md:block md:w-[45%]"></div>
+<div class="absolute left-1/2 transform -translate-x-1/2 size-4 bg-[var(--primary)] rounded-full shadow-[0_0_15px_rgba(242,13,13,0.8)] z-10"></div>
+<div class="w-full md:w-[45%] text-left pl-8 md:pl-16">
+<span class="text-[var(--primary)] font-bold text-2xl mb-2 block">2020</span>
+<h4 class="text-white text-xl font-bold mb-2 uppercase">Apertura del Taller</h4>
+<p class="text-zinc-500">Apertura oficial de nuestro estudio taller, diseñado específicamente para la corrección de pintura y otros detalles de alta gama.</p>
+</div>
+</div>
+<div class="relative flex items-center justify-between group">
+<div class="w-full md:w-[45%] text-right pr-8 md:pr-16">
+<span class="text-[var(--primary)] font-bold text-2xl mb-2 block">2023</span>
+<h4 class="text-white text-xl font-bold mb-2 uppercase">Crecimiento de Servicios</h4>
+<p class="text-zinc-500">Nos convertimos en el taller de detallado con una variedad de servicios, elevando los estándares locales.</p>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 size-4 bg-[var(--primary)] rounded-full shadow-[0_0_15px_rgba(242,13,13,0.8)] z-10"></div>
+<div class="hidden md:block md:w-[45%]"></div>
+</div>
+<div class="relative flex items-center justify-between group">
+<div class="hidden md:block md:w-[45%]"></div>
+<div class="absolute left-1/2 transform -translate-x-1/2 size-4 bg-[var(--primary)] rounded-full shadow-[0_0_15px_rgba(242,13,13,0.8)] z-10"></div>
+<div class="w-full md:w-[45%] text-left pl-8 md:pl-16">
+<span class="text-[var(--primary)] font-bold text-2xl mb-2 block">2026</span>
+<h4 class="text-white text-xl font-bold mb-2 uppercase">Crecimiento del Taller</h4>
+<p class="text-zinc-500">Crecimiento oficial del taller, ofreiciendo una gran variedad de servicios de alta calidad.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 lg:px-10 max-w-7xl mx-auto">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+<div class="aspect-[3/4] rounded-lg overflow-hidden relative group">
+<div class="absolute inset-0 bg-cover bg-center monochrome-img" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEMutgscxuai0LYl_nAGcV5ETkJjC9qWRMFD1f8ykfgjjicsjAIQIeqCd7wCAzvZVrhyG3rCc2TC9AZUIA2Y8xiL-fFHa00nhO8Y32Fv4KG2dawkljpEx96bFZpw9CM7E3v_ZYcbI7njYti0jYI2ff9qBJSXdkHzEPinHGFGu6QUQ_wB-6MM9s3XiVDYLAi4xR__ZDnI6WA3PMWXSDrxia_EcQrdnFQsepNa3dmMxaISpc4ECJNsMDqEHyeF-bRBuJnp_QUBylMHL_');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white font-bold uppercase text-xs tracking-widest">Maestría</div>
+</div>
+<div class="aspect-[3/4] rounded-lg overflow-hidden relative mt-8 group">
+<div class="absolute inset-0 bg-cover bg-center monochrome-img" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuATQoMnKzctgAuRewoHEnllGeRpUWvYLQ2aa7uYMlOm96Lqpj1wlVDbf2f-bo2vT_CjgpAYL4RX7bsSjTYWhzmJE97iI9SrbvSJSYyy6DI8DdCjQ5V4jZnCzQtj4M_46Eq0FjuQrn2I6IjJX7dnMK9wnuTPdCFDFx8o3-pQcR4peC9NQdcU9PVduSWY61ERNWfsYRRLUCylKHZZgZuNS9jEGxd0P3yubueNdbnmKW-ZNQdKKd5fLrRx21Zr8JZq86yt7o-dIrKHrzFz');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white font-bold uppercase text-xs tracking-widest">Pasión</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<h3 class="text-[var(--primary)] font-bold uppercase tracking-[0.3em] text-sm mb-4">Detrás de la Máquina</h3>
+<h2 class="text-white text-4xl lg:text-5xl font-bold leading-tight uppercase mb-8 tracking-tighter">Expertos impulsados por <span class="italic font-light">pura pasión.</span></h2>
+<p class="text-zinc-400 text-lg leading-relaxed mb-8">
+                Nuestro equipo está compuesto por los mejores técnicos. Cada técnico en A-L Detallado se somete a un riguroso entrenamiento que combina la ciencia química con la delicadeza artística. Entendemos la química de las capas transparentes y el alma de un motor clásico.
+            </p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-[var(--primary)] text-xl">check_circle</span>
+<span class="font-medium">Técnicos con altas habilidades</span>
+</li>
+<li class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-[var(--primary)] text-xl">check_circle</span>
+<span class="font-medium">Más de 10 años de experiencia combinada</span>
+</li>
+<li class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-[var(--primary)] text-xl">check_circle</span>
+<span class="font-medium">Especialistas en recubrimiento cerámico</span>
+</li>
+</ul>
+<!--<button class="flex items-center gap-2 text-white font-bold group">
+<span class="uppercase tracking-widest text-sm">Conocer al Equipo</span>
+<span class="material-symbols-outlined text-[var(--primary)] group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button> -->
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[var(--background-dark)] border-t border-[var(--border-dark)] py-12">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-3">
+<div class="size-10">
+  <img
+    src="images/logo.jpeg"
+    alt="Logo A-L Detallado Automotriz"
+    class="w-full h-full object-contain"
+  />
+</div>
+<span class="text-lg font-bold tracking-tight uppercase italic text-white">A-L <span class="text-[var(--primary)]">Detallado Automotriz</span></span>
+</div>
+<p class="text-slate-500 text-sm">Elevando tu auto al siguiente nivel.</p>
+</div>
+<div class="flex gap-8">
+  <!-- Facebook -->
+  <a
+    href="https://www.facebook.com/people/A-L-Detallado-Automotriz/100063913400044/?mibextid=wwXIfr&rdid=u4wpDlPrcXEZxZYx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16rf5xLuQ1%2F%3Fmibextid%3DwwXIfr"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-slate-400 hover:text-[var(--primary)] transition-colors"
+    aria-label="Facebook"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M7 10v4h3v7h4v-7h3l1-4h-4v-2a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a
+    href="https://www.instagram.com/alexworks24?igsh=MXcyeWxyMHVlamZqZg%3D%3D&utm_source=qr"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-slate-400 hover:text-[var(--primary)] transition-colors"
+    aria-label="Instagram"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4z"/>
+      <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"/>
+      <path d="M16.5 7.5v.01"/>
+    </svg>
+  </a>
+
+  <!-- Youtube -->
+  <a
+    href="https://youtube.com/@alexworks4540?si=7J5NvjuiFJexfMSO"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-slate-400 hover:text-[var(--primary)] transition-colors"
+    aria-label="TikTok"
+  >
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+   viewBox="0 0 24 24" fill="currentColor"
+   class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+   <path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg>
+  </a>
+</div>
+
+<div class="text-center md:text-right">
+<p class="text-slate-500 text-xs">© 2026 A-L Detallado Automotriz. Todos los derechos reservados.</p>
+<a class="text-slate-400 hover:text-[var(--primary)] transition-colors" href="terms.html">Términos y Condiciones</a>
+</div>
+</div>
+</div>
+</footer>
+
+<script type="module" src="src/main.js"></script>
+
+</body></html>
